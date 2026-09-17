@@ -1,6 +1,6 @@
 import "server-only"
 import type { Shop } from "@/types/shop"
-// .env で NEXT_PUBLIC_APP_URL を設定していない場合は、localhost:3000 を使用
+// .env で NEXT_PUBLIC_APP_URL を設定していない場合は、localhost:3000 を使用---
 const BASE_URL = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000"
 
 export async function getShops(): Promise<Shop[]> {
